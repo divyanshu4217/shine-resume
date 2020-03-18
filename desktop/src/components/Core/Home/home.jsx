@@ -1,6 +1,8 @@
 import React, {  useState } from 'react';
-import AddonServices from './AddonServices/addonServices.jsx'
-import Banner from  './Banner/banner.jsx'
+import Header from  '../../Common/Header/header.jsx'
+import Banner from  '../../Core/Home/Banner/banner.jsx'
+import AddonServices from  '../../Core/Home/AddonServices/addonServices.jsx'
+// import FAQ from  '../../Core/Home/FAQ/faq.jsx'
 // import ChooseServicesSlider from './ChooseServicesSlider/chooseServicesSlider.jsx'
 // import EnquireNow from './EnquireNow/enquireNow.jsx'
 // import FAQ from './FAQ/faq.jsx'
@@ -17,12 +19,13 @@ export default function Home() {
   
     return (
         <div>
-        <h2>Hello, world</h2>
+        <Header/>
         <Banner/>
-        {/* <AddonServices/>
+        <AddonServices/>
+        {/* <FAQ/> */}
+        {/* 
         <ChooseServicesSlider/>
         <EnquireNow/>
-        <FAQ/>
         <LikeCources/>
         <OurCustomers/>
         <ProfessionalWriters/>
