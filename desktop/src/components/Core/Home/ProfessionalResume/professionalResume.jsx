@@ -1,5 +1,5 @@
 import React, { useState, Component } from 'react';
-import './relatedArticles.scss';
+import './professionalResume.scss';
 import {
   Carousel,
   CarouselItem,
@@ -26,7 +26,7 @@ const items = [
   }
 ];
 
-const RelatedArticles = (props) => {
+const ProfessionalResume = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -54,48 +54,15 @@ const RelatedArticles = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <div className="related-articles__slider">
+        <div className="professional-slider__slides">
             <div className="col">
-                <div className="related-articles__slider__content">
-                    <a href="#">
-                        <figure>
-                            <img src="/media/images/article-pic1.jpg" altText="Meet our professional resume writers" className="img-fluid" />
-                        </figure>
-                        <strong>What Makes a Cover Letter an important document attached to resume!</strong>
-                        <span>
-                            <i className="icon-forward"></i> <p>128</p>
-                            <i className="icon-watch"></i> <p>830</p>
-                        </span>
-                    </a>
-                </div>
+                <img src="/media/images/professional-resume-bg1.jpg" altText="See the difference a professional resume makes" className="img-fluid" />
             </div>
-            <div className="col">
-                <div className="related-articles__slider__content">
-                    <a href="#">
-                        <figure>
-                            <img src="/media/images/article-pic2.jpg" altText="Meet our professional resume writers" className="img-fluid" />
-                        </figure>
-                        <strong>Resume Format Tips for Experienced Professionals</strong>
-                        <span>
-                            <i className="icon-forward"></i> <p>128</p>
-                            <i className="icon-watch"></i> <p>830</p>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div className="col">
-                <div className="related-articles__slider__content">
-                    <a href="#">
-                        <figure>
-                            <img src="/media/images/article-pic3.jpg" altText="Meet our professional resume writers" className="img-fluid" />
-                        </figure>
-                        <strong>10 Words You Should Avoid Including in Your Resume</strong>
-                        <span>
-                            <i className="icon-forward"></i> <p>128</p>
-                            <i className="icon-watch"></i> <p>830</p>
-                        </span>
-                    </a>
-                </div>
+            <div className="professional-slider__content">
+                <strong>
+                  See the difference a professional resume makes
+                </strong>
+                <a href="#enquirenow" type="button" class="btn btn-primary mt-20">Enquire Now</a>
             </div>
         </div>
         
@@ -106,28 +73,22 @@ const RelatedArticles = (props) => {
   return (
 
 
-    <div className="container-fluid bg2 mt-50">
+    <div className="container-fluid mt-50">
         <div className="row">
             <div className="container">
-                <div className="row align-items-center">
-                    <div className="related-articles__content">
-                        <strong>
-                            Related Articles
-                        </strong>
-                    </div>
-                    <div className="col">
+                <div className="row">
                         <Carousel
                             activeIndex={activeIndex}
                             next={next}
                             previous={previous}
-                            className="related-articles"
+                            className="professional-slider"
                             >
                         
                             {slides}
                             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
                             <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
                         </Carousel>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -135,4 +96,4 @@ const RelatedArticles = (props) => {
     
   );
 }
-export default RelatedArticles;
+export default ProfessionalResume;

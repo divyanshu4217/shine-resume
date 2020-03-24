@@ -1,0 +1,94 @@
+@import '../../../../styles/functions';
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.addon-services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    p {
+        font-size: 1.3rem;
+        color: $gray-300;
+        font-weight: 600;
+    }
+    
+    .nav-tabs {
+        justify-content: center;
+        border-color: $border-bottom;
+
+        .nav-item {
+            .nav-link {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: $blue;
+                border-color: transparent;
+                text-transform: uppercase;
+                cursor: pointer;
+                color: $gray-300;
+                padding-bottom: 1rem;
+
+                &.active {
+                    background: transparent;
+                    position: relative;
+                    color: $blue;
+
+                    &::after {
+                        content: '';
+                        border-bottom: 3px solid $blue;
+                        position: absolute;
+                        bottom: -.2rem;
+                        left: 0;
+                        right: 0;
+                        margin: 0 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__content {
+        @extend %box-shadow3;
+        @include border-radius(.8rem);
+        padding: 2rem;
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem auto .5rem auto;
+        }
+
+        strong {
+            display: block;
+            color: $gray-200;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            line-height: 2.4rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: $gray-300;
+            margin: 1rem 0;
+            height: 3.7rem;
+            overflow: hidden;
+            font-weight: 400;
+        }
+
+        a {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .btn {
+        margin: 3rem auto 0 auto;
+    }
+}

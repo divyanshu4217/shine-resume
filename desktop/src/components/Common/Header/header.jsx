@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './header.scss';
-import {Navigation} from  '../Navigation/navigation.jsx'
+import Navigation from  '../Navigation/navigation.jsx'
 
 class Header extends Component {
     render() {
@@ -8,6 +8,6 @@ class Header extends Component {
             <Navigation/>
         )
     }
-}
+};
 
 export default Header;

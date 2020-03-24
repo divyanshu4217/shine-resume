@@ -140,4 +140,25 @@ input[type="button"] {
 
 .btn-primary{
   background-color: $yellow;
+  border-color: $yellow;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  box-shadow: -5px 10px 15px 0 #FFF7E4;
+  border-radius: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+
+  &:hover {
+    background-color: $white;
+    border-color: $yellow;
+    color: $yellow;
+  }
+}
+
+.btn-outline-primary{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
 }

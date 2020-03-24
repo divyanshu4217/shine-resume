@@ -6,11 +6,11 @@
 // Color system
 
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
+$gray-100: #28303F !default;
+$gray-200: #38404C !default;
+$gray-300: #6D7A8C !default;
+$gray-400: #333333 !default;
+$gray-500: #F5F5F5 !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
@@ -34,7 +34,7 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #007bff !default;
+$blue:    #609DFC !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -169,7 +169,7 @@ $sizes: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $gray-300 !default;
 
 
 // Links
@@ -283,9 +283,9 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                $font-size-base * 1.25 !default;
-$font-size-sm:                $font-size-base * .875 !default;
+$font-size-base:              1.3rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.6 !default;
+$font-size-sm:                $font-size-base * 1.8 !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
@@ -296,8 +296,8 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
+$h1-font-size:                4.6rem !default;
+$h2-font-size:                2.8rem !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
@@ -1072,16 +1072,16 @@ $breadcrumb-border-radius:          $border-radius !default;
 // Carousel
 
 $carousel-control-color:             $white !default;
-$carousel-control-width:             15% !default;
+$carousel-control-width:             4.2rem !default;
 $carousel-control-opacity:           .5 !default;
 $carousel-control-hover-opacity:     .9 !default;
 $carousel-control-transition:        opacity .15s ease !default;
 
-$carousel-indicator-width:           30px !default;
-$carousel-indicator-height:          3px !default;
+$carousel-indicator-width:           1.1rem !default;
+$carousel-indicator-height:          1.1rem !default;
 $carousel-indicator-hit-area-height: 10px !default;
-$carousel-indicator-spacer:          3px !default;
-$carousel-indicator-active-bg:       $white !default;
+$carousel-indicator-spacer:          .4rem !default;
+$carousel-indicator-active-bg:       $blue !default;
 $carousel-indicator-transition:      opacity .6s ease !default;
 
 $carousel-caption-width:             70% !default;
@@ -1141,3 +1141,75 @@ $positions: static, relative, absolute, fixed, sticky !default;
 
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+
+// custom variables by sachin
+
+$blue-light: #609DFC;
+$sprite: url(/media/images/sprite.png) no-repeat;
+$input-focus: $blue;
+$footer-bg: #F8F8F8;
+$border-bottom: #D8D8D8;
+$border: #e9e9e9;
+$anchor-color: #2958A8;
+
+%box-shadow-orange {
+  box-shadow: -5px 10px 15px 0 #FFF7E4;
+}
+
+%blue-bdr {
+  background: $blue-light;
+  width: 7rem;
+  height: .6rem;
+  border-radius: .8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+%box-shaow-orange {
+  background: $yellow;
+  box-shadow: -5px 10px 15px 0 #FFF7E4;
+  border-radius: 2rem;
+}
+
+%box-shadow1 {
+  background: $white;
+  box-shadow: 0 2px 4px 0 rgba(201,201,201,0.50);
+}
+
+%box-shadow2 {
+  background: $white;
+  box-shadow: 1px -20px 70px -65px rgba(104, 104, 104, 0.8)
+}
+
+%box-shadow3 {
+  background: $white;
+  box-shadow: 0 0 15px 0 rgba(99,99,99,0.20);
+}
+
+%box-shadow4 {
+  background: $white;
+  box-shadow: 0 -5px 60px -25px rgba(104,104,104,0.50);
+}
+
+%box-shadow5 {
+  background: $white;
+  box-shadow: 0 0 15px 0 rgba(99,99,99,0.20);
+}
+
+%box-shadow5 {
+  background: $white;
+  box-shadow: 0 3px 14px 0 rgba(212,209,209,0.50);
+}
+
+%box-shadow-menu-link {
+  background: $white;
+  box-shadow: 0 -3px 10px -3px rgba(99,99,99,0.20);
+}
+
+%box-shadow-menu {
+  background: $white;
+  box-shadow: 0 9px 8px 2px rgba(99,99,99,0.20);
+  // box-shadow: 0 0 15px 0 rgba(99,99,99,0.20);
+}

@@ -1,5 +1,138 @@
+@import '../../../styles/functions';
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
 .brand-logo {
-    width: 20px;
-    height: 20px;
-    background: #000000;
+    background: $sprite;
+    @include icon-inblock (8.9rem, 5.7rem, 0 0);
+}
+
+.navbar {
+    padding: 0 3rem 1rem 3rem;
+    align-items: flex-end;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.10);
+
+    .nav-item {
+        // &:not(first-child) {
+        //     margin-left: 3rem;
+        // }
+        .nav-link {
+            color: $anchor-color;
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: 1rem 2rem .5rem 2rem;
+            // border-top-left-radius: .3rem;
+            // border-top-right-radius: .3rem;
+
+            &:hover {
+                color: $anchor-color;
+                // background: $white;
+                // @extend %box-shadow-menu-link;
+            }
+        }
+
+        
+    }
+
+    .menu-item {
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
+
+        &:hover {
+            background: $white;
+            @extend %box-shadow-menu-link;
+        }
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .dropdown-menu {
+        background: $white;
+        border: transparent;
+        @extend %box-shadow-menu;
+        padding: 0;
+        top: 96%;
+        border-bottom-left-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        
+        .dropdown-item {
+            font-size: 1.3rem;
+            color: $gray-100;
+            padding: 1rem 2rem;
+            white-space: inherit;
+
+            &:hover, &:focus {
+                background: $gray-500;
+                color: $anchor-color;
+            }
+        }
+    }
+
+    .top-links {
+        .navbar-nav {
+            margin: 0 1rem 0 0;
+            .nav-item {
+                padding: 1rem 1rem .5rem 1rem;
+                .nav-link {
+                    padding: 1rem 2rem .5rem 2rem;
+                }
+
+                a {
+                    color: $gray-100;
+                    
+                    &:hover, &:focus {
+                        color: $anchor-color;
+                    }
+                }
+
+                .custom-l {
+                    left: -5rem;
+                }
+            }
+        }
+    }
+}
+
+.multi-level {
+    height: 23.5rem;
+    width: 25rem;
+}
+
+.dropdown-submenu {
+    >.dropdown-item {
+        // border-left: 5px solid $anchor-color;
+    }
+
+    &:hover {
+        .dropdown-menu-open {
+            display: block;
+            border-radius: 6px 0 6px 6px;
+            box-shadow: none;
+            border-radius: 0;
+            height: 23.5rem;
+            border-top-right-radius: .3rem;
+            border-bottom-right-radius: .3rem;
+        }
+    }
+
+    .dropdown-menu-open {
+        top: 6px;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        box-shadow: none;
+        position: absolute;
+        width: 28rem;
+        background-color: $gray-500;
+        color: $gray-100;
+
+        .dropdown-item {
+            a {
+                color: $gray-100;
+            }
+        }
+    }
 }

@@ -19,7 +19,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box; // 1
+  box-sizing: inherit; // 1
 }
 
 html {
@@ -27,6 +27,8 @@ html {
   line-height: 1.15; // 3
   -webkit-text-size-adjust: 100%; // 4
   -webkit-tap-highlight-color: rgba($black, 0); // 5
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 // Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers)
@@ -52,6 +54,7 @@ body {
   color: $body-color;
   text-align: left; // 3
   background-color: $body-bg; // 2
+  box-sizing: border-box;
 }
 
 // Future-proof rule: in browsers that support :focus-visible, suppress the focus outline
@@ -190,7 +193,7 @@ a {
 
   @include hover() {
     color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    // text-decoration: $link-hover-decoration;
   }
 }
 
