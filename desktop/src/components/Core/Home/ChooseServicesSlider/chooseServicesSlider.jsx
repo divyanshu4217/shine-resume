@@ -53,6 +53,7 @@ const ChooseServicesSlider = (props) => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
+        
       >
         <div className="choose-services__slider mt-20">
             <div className="col">
@@ -113,6 +114,7 @@ const ChooseServicesSlider = (props) => {
                             next={next}
                             previous={previous}
                             className="service-slider"
+                            interval={false}
                             >
                         
                             {slides}

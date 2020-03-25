@@ -139,6 +139,7 @@ const ProfessionalWriters = (props) => {
                             next={next}
                             previous={previous}
                             className="professional-writers"
+                            interval={false}
                             >
                         
                             {slides}

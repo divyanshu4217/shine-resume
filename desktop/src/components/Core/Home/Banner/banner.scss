@@ -28,11 +28,12 @@
             line-height: 4.6rem;
             height: 9.6rem;
             overflow: hidden;
+            backface-visibility: hidden;
             animation-name: fadeInUp;
             animation-duration: 1s;
             animation-timing-function: ease-in-out;
-            backface-visibility: hidden;
             // animation-iteration-count: infinite;
+            // animation: 10s linear topToBottom;
         }
     
         &__list {
@@ -81,11 +82,11 @@
 @keyframes fadeInUp {
     0% {
       opacity: 0;
-      transform: translateY(50px)
+      transform: translateY(20px)
     }
 
     50% {
-        transform: translateY(-50px)
+        transform: translateY(-20px)
       }
   
     100% {
@@ -93,6 +94,21 @@
       transform: translateY(0)
     }
   }
+
+@-webkit-keyframes topToBottom{
+    0%,100%,80%{
+        opacity:0
+    }
+    5%{
+        opacity:0;transform:translateY(25px)
+    }
+    10%,25%{
+        opacity:1;transform:translateY(0)
+    }
+    30%{
+        opacity:0;transform:translateY(-25px)
+    }
+}
   
 //   @keyframes fadeInUp {
 //     from {

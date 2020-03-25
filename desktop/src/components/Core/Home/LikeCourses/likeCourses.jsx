@@ -175,6 +175,7 @@ const LikeCources = (props) => {
                         next={next}
                         previous={previous}
                         className="courses-slider"
+                        interval={false}
                         >
                     
                         {slides}

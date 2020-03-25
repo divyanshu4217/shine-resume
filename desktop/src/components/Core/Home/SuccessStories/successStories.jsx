@@ -91,6 +91,7 @@ const SuccessStories = (props) => {
                         next={next}
                         previous={previous}
                         className="carousel-fade stories-slider"
+                        interval={false}
                         >
                     
                         <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />

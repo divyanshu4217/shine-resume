@@ -82,6 +82,7 @@ const ProfessionalResume = (props) => {
                             next={next}
                             previous={previous}
                             className="professional-slider"
+                            interval={false}
                             >
                         
                             {slides}

@@ -121,6 +121,7 @@ const RelatedArticles = (props) => {
                             next={next}
                             previous={previous}
                             className="related-articles"
+                            interval={false}
                             >
                         
                             {slides}
