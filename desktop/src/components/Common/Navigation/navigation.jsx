@@ -54,6 +54,16 @@ class Navigation extends Component {
                 </li>
                 <li className="nav-item menu-item dropdown">
                   <a className="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Recruiter Reach
+                  </a>
+                  <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a className="dropdown-item" href="#">Recruiter Reach Links</a>
+                    <a className="dropdown-item" href="#">Recruiter Reach Links</a>
+                    <a className="dropdown-item" href="#">Recruiter Reach Links</a>
+                  </div>
+                </li>
+                <li className="nav-item menu-item dropdown">
+                  <a className="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Free Resources
                   </a>
                   {/* multi level dropdown */}
@@ -110,16 +120,6 @@ class Navigation extends Component {
                     </li>
                   </ul>
                   {/* multi level dropdown */}
-                </li>
-                <li className="nav-item menu-item dropdown">
-                  <a className="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Recruiter Reach
-                  </a>
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a className="dropdown-item" href="#">Recruiter Reach Links</a>
-                    <a className="dropdown-item" href="#">Recruiter Reach Links</a>
-                    <a className="dropdown-item" href="#">Recruiter Reach Links</a>
-                  </div>
                 </li>
                 <li className="nav-item menu-item dropdown">
                   <a className="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
