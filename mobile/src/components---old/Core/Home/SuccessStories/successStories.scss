@@ -1,0 +1,82 @@
+@import '../../../../styles/functions';
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.success-stories {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.stories-slider {
+    padding-bottom: 3rem;
+
+    .carousel-inner {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+
+    .carousel-indicators {
+        li {
+            background-color: #eee; 
+
+            &.active {
+                background-color: $blue;
+            }
+        }
+    }
+
+    &__content {
+        @extend %box-shadow4;
+        padding: 2.5rem 3rem 2.5rem 6rem;
+        margin: 2rem 1rem 3rem 1rem;
+        position: relative;
+
+        i {
+            width: 5.7rem;
+            height: 5.7rem;
+            @include border-radius(100%);
+            font-style: normal;
+            font-size: 4.2rem;
+            background: #FFD3D3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            position: absolute;
+            left: -2.5rem;
+            top: 30%;
+            @extend %box-shadow1;
+
+            &.col2 {
+                background: #A1ECDF;
+            }
+        }
+
+        figure {
+            position: absolute;
+            right: 2rem;
+            bottom: 1rem;
+            z-index: 1;
+        }
+
+        p {
+            font-weight: 400;
+            text-align: left;
+            height: 5.8rem;
+            overflow: hidden;
+            z-index: 2;
+            position: relative;
+        }
+
+        strong {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: block;
+        }
+    }
+}

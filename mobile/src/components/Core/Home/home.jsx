@@ -1,6 +1,7 @@
 import React, {  useState } from 'react';
-import AddonServices from './AddonServices/addonServices.jsx'
-import Banner from  './Banner/banner.jsx'
+// import AddonServices from './AddonServices/addonServices.jsx'
+// import Banner from  './Banner/banner.jsx'
+import ExpertResumeServices from './ExpertResumeServices/expertResumeServices.jsx'
 // import ChooseServicesSlider from './ChooseServicesSlider/chooseServicesSlider.jsx'
 // import EnquireNow from './EnquireNow/enquireNow.jsx'
 // import FAQ from './FAQ/faq.jsx'
@@ -17,7 +18,7 @@ export default function Home() {
   
     return (
         <div>
-        <h2>Hello, React Mobile</h2>
+        <ExpertResumeServices/>
         {/* <Banner/> */}
         {/* <AddonServices/>
         <ChooseServicesSlider/>

@@ -1,0 +1,102 @@
+@import '../../../../styles/functions';
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.courses-like {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.courses-slider {
+
+    .carousel-inner {
+        padding: 1.5rem 3.5rem 0 3.5rem;
+    }
+
+    .listing {
+        &__list {
+            @extend %box-shadow5;
+            padding: 1.5rem 1rem 1.5rem 0;
+            margin: 2rem 0;
+            position: relative;
+            @include border-radius(5px);
+
+            h3 {
+                line-height: 1.8rem;
+                height: 4rem;
+                overflow: hidden;
+                a {
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                    font-weight: 600;
+                    color: #2958A8;
+                }
+            }
+        }
+    
+        &__image {
+            width: 7rem;
+        }
+    
+        .rating {
+            margin: 2rem 0 1rem 0;
+            i {
+                margin-right: .2rem;
+            }
+            &__output {
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            &__mode {
+                display: inline-block;
+                font-size: 1.1rem;
+                color: $gray-300;
+                border: 1px solid $border;
+                @include border-radius(20px);
+                padding: .3rem 1rem;
+                margin-right: 1rem;
+            }
+        }
+    
+        .courses {
+            align-self: center;
+            color: $gray-200;
+    
+            &__price {
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-right: 2.5rem;
+            }
+        }
+    }
+
+    .carousel-control-prev {
+        width: 4.6rem;
+
+        .carousel-control-prev-icon {
+            background: $sprite -523px -48px;
+            width: 4.6rem;
+            height: 4.6rem;
+            box-shadow: 0 2px 15px 0 #DEDEDE;
+            border-radius: 100%;
+        }
+
+    }
+    
+    .carousel-control-next {
+        width: 4.6rem;
+
+        .carousel-control-next-icon {
+            background: $sprite -579px -48px;
+            width: 4.6rem;
+            height: 4.6rem;
+            box-shadow: 0 2px 15px 0 #DEDEDE;
+            border-radius: 100%;
+        }
+    }
+    
+}

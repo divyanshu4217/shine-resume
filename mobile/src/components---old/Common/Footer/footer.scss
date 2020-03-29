@@ -1,0 +1,70 @@
+@import '../../../styles/functions';
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+footer {
+    background: $footer-bg;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            &:not(:last-child) {
+                margin-right: 2.5rem;
+            }
+
+            a {
+                color: $gray-200;
+                &:hover, &:focus {
+                    color: $gray-200;
+                }
+            }
+        }
+    }
+
+    .bdr-bottom {
+        border-bottom: 1px solid $border-bottom;
+    }
+
+    .social-icon {
+        a {
+            margin-left: 3rem;
+        }
+    }
+
+    .secure-payment {
+        font-size: 1.1rem;
+        color: $gray-300;
+        display: flex;
+
+        strong {
+            font-size: 1.8rem;
+            color: $gray-200;
+            display: block;
+            font-weight: 600;
+        }
+    }
+
+    .payment-option {
+        color: $gray-300;
+        font-size: 1.2rem;
+
+        figure {
+            display: block;
+            margin-top: .5rem;
+        }
+    }
+
+    .copyright {
+        color: $gray-300;
+        font-size: 1.3rem;
+    }
+
+    .bdr-bottom {
+        padding-bottom: 1rem;
+    }
+}

@@ -1,0 +1,67 @@
+@import '../../../../styles/functions';
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+
+.faq {
+    h2 {
+        text-align: center;
+    }
+    &__list {
+        background: #F9FAFC;
+        @include border-radius(5px);
+        margin-bottom: 2rem;
+        padding: 2rem;
+        counter-increment: section;
+
+        button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            position: relative;
+
+            &:hover, &:focus {
+                background: transparent;
+                border: none;
+                box-shadow: none;
+                cursor: pointer;
+            }
+
+            strong {
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: $gray-100;
+                
+                &::before {
+                    content: counter(section) '. ';
+                }
+            }
+
+            &::after {
+                content: '';
+                background: $sprite -345px -49px;
+                width: 1.4rem;
+                height: .8rem;
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: 1rem;
+
+                &:focus {
+                    background: $sprite -322px -49px;
+                }
+            }
+        }
+
+        .card {
+            border-color: transparent;
+            background: transparent;
+
+            p {
+                margin: 1rem 0 0 1rem;
+            }
+        }
+    }
+}
