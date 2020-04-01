@@ -1,0 +1,92 @@
+@import '../../../../../src/styles/main';
+
+.professional-writers {
+
+    &__content {
+        position: relative;
+
+        strong {
+            font-size: 1.9rem;
+            font-weight: 700;
+            line-height: 2.5rem;
+            display: block;
+            color: $gray-100;
+
+            h2 {
+                display: inline;
+                font-size: 1.9rem;
+                font-weight: 700;
+                line-height: 2.5rem;
+                margin: 0;
+            }
+        }
+    }
+
+    &__slider {
+        display: flex;
+        margin-top: 4rem;
+
+        strong {
+            display: block;
+            color: $gray-200;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: $gray-300;
+            margin: 1rem 0 2rem 0;
+            height: 3.5rem;
+            overflow: hidden;
+        }
+
+        &__content {
+            @extend %box-shadow2;
+
+            figure {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem 0 2rem 0;
+                width: 6rem;
+                height: 6rem;
+                @include border-radius(100%);
+
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                    @include border-radius(100%);
+                }
+            }
+        }
+
+        &__social {
+            display: flex;
+            align-items: center;
+
+            a {
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 100%;
+                border: 1px solid $blue;
+                margin: 0 .5rem;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    >.slick-slider {
+        .slick-list {
+            .slick-slide {
+                width: 23rem !important;
+                padding: 2rem 1.2rem !important;
+            }
+        }
+    }
+}

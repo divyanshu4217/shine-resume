@@ -1,0 +1,89 @@
+@import '../../../../../src/styles/main';
+
+.enquire-now {
+
+    .form-group{
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+  
+    label {
+      position: absolute;
+      left: 1rem;
+      top:.8rem;
+      font-weight: 400;
+      font-size: 1.2rem;
+      background: $white;
+      padding: .3rem;
+      pointer-events: none;
+    }
+  
+    input:focus + label, input:not(:placeholder-shown) + label {
+      opacity:1;
+      transform: scale(.9) translateY(-100%) translateX(-10px);
+      color: $gray-300;
+      left: 1.6rem;
+    }
+  
+    textarea:focus + label, textarea:not(:placeholder-shown) + label {
+      opacity:1;
+      transform: scale(.9) translateY(-100%) translateX(-10px);
+      color: $gray-300;
+      left: 1.6rem;
+    }
+  
+    .error {
+      label {
+        opacity:1;
+        transform: scale(.9) translateY(-100%) translateX(-10px);
+        color: $red;
+        left: 1.6rem;
+      }
+  
+      input {
+        border-color: $red;
+      }
+    }
+  
+    input, textarea {
+      &:focus {
+        border: $border;
+        outline-color: $border-color;
+        box-shadow: none;
+      }
+    }
+  
+    input {
+      width:100%;
+      padding-left: 1rem;
+      height: 4rem;
+      border: $border;
+      @include border-radius(4px);
+    }
+  
+    input, label {
+      transition: all 0.2s;
+      transition-timing-function: ease;
+      transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+      opacity:1;
+    }
+
+    // .form-control {
+    //     border-color: $border;
+    //     @include border-radius(4px);
+    //     height: 4.6rem;
+    //     padding-left: 1.5rem;
+    // }
+
+    textarea {
+        height: 6rem !important;
+        border: $border;
+        @include border-radius(4px);
+        width: 100%;
+    }
+
+    .btn-orange {
+        padding: 1rem 4rem;
+        font-size: 1.3rem;
+    }
+  }

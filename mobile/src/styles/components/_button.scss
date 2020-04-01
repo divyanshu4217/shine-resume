@@ -1,0 +1,47 @@
+.btn-blue {
+    background: $blue;
+    border: 1px solid $blue;
+    color: $white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    @include border-radius(20px)
+
+    &:hover, &:focus {
+        background: $white;
+        border: 1px solid $blue;
+        color: $blue;
+    }
+}
+
+.btn-orange {
+    background: $orange;
+    border: 1px solid $orange;
+    color: $white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    @include border-radius(20px);
+    box-shadow: -5px 10px 15px 0 #FFF7E4;
+
+    &:hover, &:focus {
+        background: $white;
+        border: 1px solid $orange;
+        color: $orange;
+    }
+}
+
+.btn-white {
+    border: 1px solid $white;
+    color: $white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    @include border-radius(3px);
+
+    &:hover, &:focus {
+        background: $white;
+        border: 1px solid $white;
+        color: $gray-100;
+    }
+}

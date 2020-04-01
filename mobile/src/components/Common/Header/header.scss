@@ -1,0 +1,13 @@
+@import '../../../../src/styles/main';
+
+.header {
+    padding: 1rem 1.5rem;
+    background: $white;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.10);
+    display: flex;
+    align-items: center;
+
+    .icon-shine {
+        margin-left: 5rem;
+    }
+}

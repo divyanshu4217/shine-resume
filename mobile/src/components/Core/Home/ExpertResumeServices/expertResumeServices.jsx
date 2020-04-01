@@ -5,9 +5,9 @@ class ExpertResumeServices extends Component {
     render() {
         return(
             <div className="container expert-resume-services container">
-                <div className="expert-resume-services__content mt-20">
-                    <strong>
-                        Boost your career with our <h2>Expert Resume Writing</h2> service
+                <div className="expert-resume-services__content">
+                    <strong className="secondary-heading">
+                        Boost your career with our <h2 className="secondary-heading">Expert Resume Writing</h2> service
                     </strong>
                     <p className="mt-20">
                         Get success on landing new job faster with a resume that shows your strength. Use our experts to write your resume using the right keyword to highlight your career goals and achievements in an effective manner and quality formatting to make your resume stand out.
@@ -16,70 +16,30 @@ class ExpertResumeServices extends Component {
                 <div className="expert-resume-services__stats mt-20">
                     <ul>
                         <li>
-                            <figure>
-                                <span className="color1">
-                                    <i className="icon-stats1"></i>
-                                </span>
-                                <figcaption>
-                                    <strong>10+</strong>
-                                    Years of experience
-                                </figcaption>
-                            </figure>
+                            <strong className="color1">10+</strong>
+                            <p>Years of experience</p>
                         </li>
                         <li>
-                            <figure>
-                                <span className="color2">
-                                    <i className="icon-stats2"></i>
-                                </span>
-                                <figcaption>
-                                    <strong>10,000+</strong>
-                                    Resume written
-                                </figcaption>
-                            </figure>
+                            <strong className="color2">10,000+</strong>
+                            <p>Resume written</p>
                         </li>
                         <li>
-                            <figure>
-                                <span className="color3">
-                                    <i className="icon-stats3"></i>
-                                </span>
-                                <figcaption>
-                                    <strong>95+</strong>
-                                    Customer satisfaction
-                                </figcaption>
-                            </figure>
+                            <strong className="color3">95+</strong>
+                            <p>Customer satisfaction</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <strong className="color4">15+</strong>
+                            <p>Countries served</p>
                         </li>
                         <li>
-                            <figure>
-                                <span className="color4">
-                                    <i className="icon-stats4"></i>
-                                </span>
-                                <figcaption>
-                                    <strong>15+</strong>
-                                    Countries served
-                                </figcaption>
-                            </figure>
+                            <strong className="color5">50+</strong>
+                            <p>Industry served</p>
                         </li>
                         <li>
-                            <figure>
-                                <span className="color5">
-                                    <i className="icon-stats5"></i>
-                                </span>
-                                <figcaption>
-                                    <strong>50+</strong>
-                                    Industry served
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <span className="color6">
-                                    <i className="icon-stats6"></i>
-                                </span>
-                                <figcaption>
-                                    <strong>20+</strong>
-                                    Writers
-                                </figcaption>
-                            </figure>
+                            <strong className="color6">20+</strong>
+                            <p>Writers</p>
                         </li>
                     </ul>
                 </div>

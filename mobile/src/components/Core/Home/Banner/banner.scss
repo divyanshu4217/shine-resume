@@ -1,0 +1,140 @@
+@import '../../../../../src/styles/main';
+
+.banner-slide {
+    color: $white;
+
+    .carousel-content {
+        padding: 0 1.5rem 3rem 1.5rem;
+        backface-visibility: hidden;
+        text-align: left;
+        width: 100%;
+
+        &.banner1 {
+            background: url(/media/images/banner-bg1.jpg) 0 0;
+            background-size: cover;
+        }
+
+        &.banner2 {
+            background: url(/media/images/banner-bg2.jpg) 0 0;
+            background-size: cover;
+        }
+    
+        strong {
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: block;
+            margin-top: 3rem;
+        }
+        .banner-heading {
+            font-size: 2.2rem;
+            font-weight: 600;
+            line-height: 2.8rem;
+            width: 75%;
+            height: 5.5rem;
+            margin: 1rem 0 2rem 0;
+            padding: 0;
+            display: block;
+            overflow: hidden;
+            backface-visibility: hidden;
+            animation-name: fadeInUp;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            // animation-play-state: running;
+            // animation-iteration-count: infinite;
+            // animation: 10s linear topToBottom;
+        }
+    
+        &__list {
+            margin: 5rem 0 3rem 2rem;
+            padding: 0;
+            font-size: 1.3rem;
+            color: $gray-300;
+            display: block;
+            list-style-type: none;
+            
+            li {
+                position: relative;
+                margin-bottom: 1rem;
+                padding-left: .5rem;
+
+                strong {
+                    font-weight: 600;
+                    display: inline;
+                    font-size: 1.3rem;
+                    margin-bottom: 0;
+                    text-transform: none;
+                }
+                
+                &::before {
+                    content: '';
+                    background: $sprite;
+                    background-position: -571px -33px;
+                    width: 1rem;
+                    height: .8rem;
+                    display: inline-block;
+                    position: absolute;
+                    left: -1.7rem;
+                    top: .6rem;
+                }
+            }
+        }
+    }
+
+    // .carousel-indicators {
+    //     margin-left: 6%;
+    //     justify-content: flex-start;
+    //     bottom: 2rem;
+    // }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 2rem;
+        margin: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px)
+    }
+
+    50% {
+        transform: translateY(-20px)
+      }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }
+
+//   @keyframes fadeInUp {
+//     20%, 100% {
+//         opacity: 0;
+//         transform:translateY(20px)
+//       }
+//       0% {
+//         opacity: 0;
+//         transform:translateY(0)
+//       }
+//       80% {
+//         opacity: 1;
+//         transform:translateY(-20px)
+//       }
+//   }
+
+@-webkit-keyframes topToBottom{
+    0%,100%,80%{
+        opacity:0
+    }
+    5%{
+        opacity:0;transform:translateY(25px)
+    }
+    10%,25%{
+        opacity:1;transform:translateY(0)
+    }
+    30%{
+        opacity:0;transform:translateY(-25px)
+    }
+}

@@ -4,152 +4,117 @@
     white-space: nowrap;
   }
   
-  .icon-call {
+  .icon-shine {
     background: $sprite;
-    @include icon-inblock (21px, 22px, -324px 0);
+    @include icon-inblock (79px, 51px, 0 0);
   }
-  
-  .icon-stats1 {
+
+  .icon-hamburger {
     background: $sprite;
-    @include icon-inblock (20px, 24px, -180px 0);
+    @include icon-inblock (26px, 17px, -89px -1px);
   }
-  
-  .icon-stats2 {
+
+  .icon-cart {
     background: $sprite;
-    @include icon-inblock (18px, 23px, -207px 0);
+    @include icon-inblock (22px, 22px, -129px -1px);
   }
-  
-  .icon-stats3 {
+
+  .icon-user-pic {
     background: $sprite;
-    @include icon-inblock (23px, 26px, -235px 0);
+    @include icon-inblock (43px, 43px, -170px -1px);
   }
-  
-  .icon-stats4 {
+
+  .icon-home {
     background: $sprite;
-    @include icon-inblock (22px, 28px, -266px 0);
+    @include icon-inblock (21px, 19px, -229px 0);
   }
-  
-  .icon-stats5 {
+
+  .icon-resume-service {
     background: $sprite;
-    @include icon-inblock (22px, 22px, -296px 0);
+    @include icon-inblock (21px, 17px, -271px 0);
   }
-  
-  .icon-stats6 {
+
+  .icon-linkedin-service {
     background: $sprite;
-    @include icon-inblock (27px, 28px, -327px 0);
+    @include icon-inblock (21px, 19px, -310px 0);
   }
-  
-  .icon-service-bg {
+
+  .icon-recruiter-service {
     background: $sprite;
-    @include icon-inblock (100px, 91px, -668px 0);
+    @include icon-inblock (21px, 22px, -347px 0);
   }
-  
-  .icon-service1 {
+
+  .icon-free-resources {
     background: $sprite;
-    @include icon-inblock (39px, 48px, -369px 0);
+    @include icon-inblock (21px, 21px, -389px 0);
   }
-  
-  .icon-service2 {
+
+  .icon-other-services {
     background: $sprite;
-    @include icon-inblock (40px, 48px, -418px 0);
+    @include icon-inblock (21px, 18px, -430px 0);
   }
-  
-  .icon-service3 {
+
+  .icon-courses-services {
     background: $sprite;
-    @include icon-inblock (47px, 57px, -469px 0);
+    @include icon-inblock (21px, 18px, -468px 0);
+  }
+
+  .icon-blog-services {
+    background: $sprite;
+    @include icon-inblock (21px, 22px, -509px 0);
+  }
+
+  .icon-arrow-menusm {
+    background: $sprite;
+    @include icon-inblock (7px, 13px, -584px -1px);
+  }
+
+  .icon-arrow-menulg {
+    background: $sprite;
+    @include icon-inblock (18px, 19px, -556px -1px);
+  }
+
+  .icon-tick {
+    background: $sprite;
+    @include icon-inblock (10px, 8px, -571px -33px);
   }
   
   .icon-facebook {
     background: $sprite;
-    @include icon-inblock (9px, 17px, -95px -26px);
+    @include icon-inblock (6px, 11px, -599px 0);
   }
   
   .icon-twitter {
     background: $sprite;
-    @include icon-inblock (18px, 15px, -110px -27px);
+    @include icon-inblock (11px, 10px, -613px 0);
   }
   
   .icon-linkedin {
     background: $sprite;
-    @include icon-inblock (17px, 17px, -133px -26px);
+    @include icon-inblock (11px, 11px, -633px 0);
   }
-  
-  .icon-addon1 {
-    background: $sprite;
-    @include icon-inblock (52px, 40px, -157px -29px);
-  }
-  
-  .icon-addon2 {
-    background: $sprite;
-    @include icon-inblock (52px, 44px, -219px -29px);
-  }
-  
-  .icon-addon3 {
-    background: $sprite;
-    @include icon-inblock (37px, 46px, -277px -29px);
-  }
-  
-  .icon-quotes {
-    background: $sprite;
-    @include icon-inblock (80px, 86px, 0 -66px);
-  }
-  
+
   .icon-forward {
     background: $sprite;
-    @include icon-inblock (15px, 12px, -322px -32px);
+    @include icon-inblock (15px, 12px, -592px -30px);
   }
   
   .icon-watch {
     background: $sprite;
-    @include icon-inblock (19px, 11px, -343px -33px);
+    @include icon-inblock (17px, 11px, -616px -30px);
   }
-  
-  .icon-facebook-footer {
-    background: $sprite;
-    @include icon-inblock (13px, 24px, -368px -52px);
-  }
-  
-  .icon-linkedin-footer {
-    background: $sprite;
-    @include icon-inblock (25px, 23px, -392px -52px);
-  }
-  
-  .icon-twitter-footer {
-    background: $sprite;
-    @include icon-inblock (24px, 20px, -428px -56px);
-  }
-  
-  .icon-secure {
-    background: $sprite;
-    @include icon-inblock (29px, 40px, -626px 0);
-  }
-  
-  .icon-payment-options {
-    background: $sprite;
-    @include icon-inblock (252px, 29px, -87px -80px);
-  }
-  
+
   .icon-star {
     background: $sprite;
-    @include icon-inblock (13px, 12px, -345px -80px);
+    @include icon-inblock (13px, 12px, -125px -33px);
   }
   
   .icon-star-blank {
     background: $sprite;
-    @include icon-inblock (13px, 12px, -364px -80px);
+    @include icon-inblock (13px, 12px, -144px -33px);
   }
-  
-  .icon-call {
+
+  .icon-arrow-addon {
     background: $sprite;
-    @include icon-inblock (16px, 20px, -91px 0);
-  }
-  
-  .icon-user {
-    background: $sprite;
-    @include icon-inblock (21px, 21px, -111px 0);
-  }
-  
-  .icon-cart {
-    background: $sprite;
-    @include icon-inblock (20px, 20px, -136px 0);
+    @include icon-inblock (20px, 20px, -93px -32px);
   }

@@ -1,0 +1,104 @@
+@import '../../../../../src/styles/main';
+
+.tabset {
+    margin-bottom: 2rem;
+
+    > input[type="radio"] {
+        position: absolute;
+        left: -200vw;
+        position: relative;
+        margin: 0;
+    }
+
+    .tab-panel {
+        display: none;
+    }
+
+    > label {
+        display: inline-block;
+        padding: 1.5rem 0;
+        border: 1px solid transparent;
+        border-bottom: 0;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: $gray-200;
+        text-transform: uppercase;
+
+        &:not(:first-of-type) {
+          margin-left: 3rem;
+        }
+    }
+
+    .tab-panel {
+        padding: 0 0 1rem 0;
+        border-top: 1px solid #ccc;
+    }
+
+}
+  
+  
+  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+  .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+  .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+  }
+
+  
+  .tabset > input:checked + label {
+    // border-color: #ccc;
+    border-bottom: 3px solid $blue;
+    margin-bottom: -2px;
+    color: $blue;
+  }
+
+  .addon-heading {
+    margin-top: 1.5rem;
+    p {
+        font-size: 1.2rem;
+        margin-top: .5rem;
+    }
+}
+
+  .addon-services {
+    @extend %box-shadow1;
+    @include border-radius(.8rem);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    figure {
+        width: 3.6rem;
+        margin: 0 1.5rem 0 0;
+        
+        img {
+          max-width: 100%;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: $gray-300;
+        margin: 0;
+        overflow: hidden;
+        font-weight: 400;
+        flex: 1;
+
+        strong {
+          display: block;
+          color: $gray-200;
+          font-size: 1.4rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: .5rem;
+      }
+    }
+
+    a {
+        margin-left: auto;
+    }
+}

@@ -3,105 +3,78 @@
 
 .expert-resume-services {
     &__content {
-        position: relative;
-        padding-top: 2rem;
-
-        strong {
-            font-size: 2.8rem;
-            font-weight: 400;
-            line-height: 3.5rem;
-            color: $gray-100;
-
-            h2 {
-                display: inline;
-            }
-        }
+        padding-top: 1.5rem;
+        
         p {
             color: $gray-300;
             font-size: 1.3rem;
             line-height: 2.2rem;
+            margin: 1rem 0 2rem 0;
         }
     }
 
     &__stats {
         ul {
             list-style-type: none;
-            margin: 0;
+            margin: 1rem 0 0 0;
             padding: 0;
             display: flex;
-            flex-wrap: wrap;
 
             li {
-                // @extend %box-shadow1;
                 flex-basis: 0;
                 flex-grow: 1;
                 max-width: 100%;
-                margin: 3rem 3rem 0 0;
+                margin: 0;
                 justify-content: center;
                 align-items: center;
-                padding: 2rem 2.2rem 1rem 2.2rem;
-                @include border-radius(4px);
-                
-                figure {
-                    text-align: center;
+                padding: 1.1rem;
+                @include border-radius(5px);
+                font-size: 1.4rem;
+                color: $gray-300;
+                line-height: 1.7rem;
+                border: $border;
+
+                &:not(:first-of-type) {
+                    margin-left: 1rem;
+                }
                     
-                    span {
-                        margin-bottom: 1rem;
-                        @include border-radius(4px);
-                        width: 4.5rem;
-                        height: 4.5rem;
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
+                strong {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    display: block;
+                    color: $gray-100;
+                    margin-bottom: 1rem;
 
-                        &.color1 {
-                            background: #8AC5F5;
-                        }
-
-                        &.color2 {
-                            background: #CC90E6;
-                        }
-
-                        &.color3 {
-                            background: #F4D781;
-                        }
-
-                        &.color4 {
-                            background: #A9F2AE;
-                        }
-
-                        &.color5 {
-                            background: #F58A9F;
-                        }
-
-                        &.color6 {
-                            background: #9CECE0;
-                        }
-
-                        i {
-                             
-                        }
+                    &.color1 {
+                        color: #8AC5F5;
                     }
 
-                    figcaption {
-                        font-size: 1.4rem;
-                        color: $gray-300;
-                        line-height: 1.7rem;
-                        text-align: center;
-
-                        strong {
-                            font-size: 1.8rem;
-                            font-weight: 700;
-                            display: block;
-                            color: $gray-100;
-                            text-align: center;
-                            margin-bottom: .5rem;
-                        }
+                    &.color2 {
+                        color: #CC90E6;
                     }
+
+                    &.color3 {
+                        color: #F4D781;
+                    }
+
+                    &.color4 {
+                        color: #A9F2AE;
+                    }
+
+                    &.color5 {
+                        color: #F58A9F;
+                    }
+
+                    &.color6 {
+                        color: #9CECE0;
+                    }
+                }
+
+                p {
+                    margin-bottom: 0;
+                    font-size: 1.2rem;
                 }
             }
         }
     }
-
-    
 }

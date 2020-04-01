@@ -1,0 +1,76 @@
+@import '../../../../../src/styles/main';
+
+.success-stories {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: .5rem;
+    }
+}
+
+.stories-slider {
+    
+    &__content {
+        @extend %box-shadow3;
+        padding: 1rem;
+        margin: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+
+        i {
+            width: 5rem;
+            height: 5rem;
+            @include border-radius(100%);
+            font-style: normal;
+            font-size: 3rem;
+            background: #FFD3D3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+
+            &.col2 {
+                background: #A1ECDF;
+            }
+        }
+
+        p {
+            font-size: 1.3rem;
+            text-align: left;
+            height: 7.8rem;
+            overflow: hidden;
+            margin-top: 2rem;
+            text-align: center;
+            line-height: 2rem;
+        }
+
+        strong {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: block;
+            margin-top: 1.5rem;
+        }
+
+        span {
+            font-size: 1.2rem;
+            color: $gray-300;
+            display: block;
+            margin-top: .5rem;
+        }
+    }
+
+    >.slick-slider {
+        .slick-arrow {
+            top: 30%;
+        }
+    }
+}

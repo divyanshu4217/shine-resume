@@ -1,0 +1,126 @@
+@import '../../../../src/styles/main';
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+  
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+
+    /* Change color on hover */
+    &:hover {
+        color: $white;
+    }
+  }
+  
+  /* The rest copied directly from react-burger-menu docs */
+  
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: absolute;
+    width: 2.6rem;
+    height: 1.7rem;
+    left: 1.5rem;
+    top: 2.7rem;
+
+    span {
+        span {
+            &:nth-child(3n) {
+                width: 1.6rem;
+            }
+        }
+    }
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: $gray-100;
+    height: .3rem !important;
+    // width: 2.6rem;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+    display: none;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: $white;
+    padding: 0;
+    font-size: 1.3rem;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .navigation {
+      font-size: 1.3rem;
+
+      .guest-section {
+        @extend %gradient;
+        padding: 1.5rem 1rem;
+        color: $white;
+        display: flex !important;
+        align-items: center;
+
+        figure {
+            width: 4.3rem;
+            height: 4.3rem;
+            @include border-radius(100%);
+            margin-right: 1rem;
+        }
+
+        a {
+            &:not(:first-of-type) {
+                margin-left: 1.5rem; 
+            }
+        }
+      }
+
+      .menu-links {
+          padding: 0 1rem 1.5rem 1.5rem;
+
+        .menu-item {
+            margin: 2.5rem 0;
+            color: $gray-600;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+
+            figure {
+                margin-right: 1rem;
+            }
+        }
+      }
+  }
+
+  #outer-container {
+      >.bm-burger-button {
+          display: none !important;
+      }
+  }
+
+  

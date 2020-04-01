@@ -1,7 +1,49 @@
 $white:    #ffffff !default;
 $gray-100: #28303F !default;
 $gray-200: #38404C !default;
-$gray-300: #6D7A8C !default;
+$gray-300: #414F67 !default;
 $gray-400: #333333 !default;
 $gray-500: #F5F5F5 !default;
+$gray-600: #666666 !default;
 $black:    #000000 !default;
+$dot-color: #C9CCD2 !default;
+$orange: #FCB100;
+$red: #dc3545;
+
+$blue: #609DFC;
+$anchor-color: #2958A8;
+
+$sprite: url(/media/images/sprite.svg) no-repeat;
+
+$bg: #F9FAFC;
+$border-color: #EAEAEA;
+$border: 1px solid $border-color;
+
+%box-shadow1 {
+    background: $white;
+    box-shadow: 0 0 15px 0 rgba(99,99,99,0.20);
+    @include border-radius(8px);
+    padding: 2rem;
+}
+
+%box-shadow2 {
+    background: $white;
+    box-shadow: 1px -15px 100px -70px rgba(104,104,104,0.80);
+    @include border-radius(8px);
+    padding: 2rem;
+}
+
+%box-shadow3 {
+    background: $white;
+    box-shadow: 0 20px 100px -66px rgba(104,104,104,0.80);
+    @include border-radius(8px);
+    padding: 2rem;
+}
+
+%gradient {
+    background: #569ec8; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #569ec8 0%, #7067dc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #569ec8 0%,#7067dc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #569ec8 0%,#7067dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#569ec8', endColorstr='#7067dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
